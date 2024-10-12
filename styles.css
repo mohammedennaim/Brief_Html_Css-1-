@@ -8,13 +8,34 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
+.video2{
+    position: relative;
+    background: no-repeat center center/cover;
+    width: 1518px;
+    height: 1080px;
+    top: -130px;
+}
+#video{
+    position: fixed;
+    background: no-repeat center center/cover;
+    width: 1600px;
+    height: 1080px;
+    top: 0;
+z-index: -1;
+}
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
-
+.container i{
+    display: none;
+    color: white;
+}
+.sizes{
+    font-size: 30px;
+}
 /* Navigation Bar */
 nav {
     background-color: #333;
@@ -24,7 +45,13 @@ nav {
     top: 0;
     z-index: 1000;
 }
-
+.logo{
+    position: absolute;
+    top: -100px;
+    left: 90px;
+    width: 300px;
+    z-index: -1;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -47,14 +74,14 @@ nav ul li a:hover {
 
 /* Hero Section */
 section#hero {
-    background: url('https://images.unsplash.com/photo-1548667512-1300dc2b94bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDF8fHxlbnwwfHx8fHw%3D') no-repeat center center/cover;
+    background: url('/images/home-background.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 150px 0;
     position: relative;
 }
 
-#hero::before {
+section#hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -64,17 +91,17 @@ section#hero {
     background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text contrast */
 }
 
-#hero .container {
+section#hero .container {
     position: relative;
     z-index: 1;
 }
 
-#hero h1 {
+section#hero h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
 }
 
-#hero p {
+section#hero p {
     font-size: 1.2em;
     max-width: 600px;
     margin: 0 auto;
@@ -147,17 +174,17 @@ section#hero {
 }
 
 .contact-form {
-    flex: 1;
-    max-width: 500px;
+    display: inline-flex;
+    max-width: 1200px;
 }
 
 .contact-image {
-    flex: 1;
     padding: 20px;
 }
 
 .contact-image img {
-    width: 100%;
+    width: 600px;
+    height: 400px;
     height: auto;
     border-radius: 10px;
 }
@@ -187,22 +214,27 @@ section#hero {
 #contact button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #553232;
+    background-color: #0c08f8;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-
 /* Footer */
-/* Footer */
+.footer_about {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    margin-top: -260px;
+}
 footer {
+    position: relative;
     background-color: #333;
     color: white;
     padding: 40px 0;
 }
-
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -267,3 +299,88 @@ footer p {
     color: #ccc;
 }
 
+@media (max-width: 600px) {
+    .container i{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 60px;
+    }  
+    .container i nav{
+        display: block;
+    }
+    .logo{
+        left: 0;
+    } 
+    nav ul{
+        list-style: none;
+        display: block;
+        justify-content: right;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    nav ul li a:hover {
+        color: #4CAF50;
+    }
+
+    section#hero {
+        background: url('/images/pexels\(bakcground\).png') no-repeat center center/cover;
+        color: white;
+        text-align: center;
+        padding: 65px 0;
+        position: relative;
+    }
+
+    section#hero h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    section#hero p {
+        font-size: 0.5em;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .contact-form {
+        display: block;
+        max-width: 500px;
+    }
+    
+    .contact-image {
+        padding: 20px;
+    }
+    
+    .contact-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .video2{
+        position: relative;
+        top: -27pc;
+        max-width: 100%;
+    }
+    .footer_about{
+        position: relative;
+        top: -37.5pc;
+    }
+    div.card p{
+        display: none;
+    }
+    div.card:hover p{
+        display: block;
+    }
+   .footer-content{
+    display: block;
+   }
+}

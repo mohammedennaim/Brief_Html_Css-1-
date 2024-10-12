@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site web technology">
+    <meta name="keywords" content="connect, CSS, JavaScript">
     <title>Simple Web Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel=preload href="images/2.jpg" as="images">
+    <link rel="preload" href="/images/pexels1.jpg" as="images">
+    <link rel="preload" href="/images/pexels3.webp" as="images">
+    <link rel="preload" href="/images/pexels2.jpg" as="images">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">    
+    <script src="https://kit.fontawesome.com/6d9e6483d0.js" crossorigin="anonymous" async defer></script>
+
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav>
         <div class="container">
+            <i class="fa-solid fa-bars sizes" ></i>
+            <image src="images/Logo.png" class="logo" alt="logo"></image>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="footer.html">Footer</a></li>
             </ul>
         </div>
     </nav>
-
 
     <!-- About Section -->
     <section id="about">
@@ -30,25 +38,87 @@
 
             <div class="founders">
                 <div class="card">
-                    <img src="images/2.avif" sizes="150" alt="Founder 1">
+                    <img src="images/pexels1.jpg" sizes="150" alt="Founder 1">
                     <h3>John Doe</h3>
                     <p>John is the visionary behind our success, with over 15 years of experience in leading tech innovations.</p>
                 </div>
 
                 <div class="card">
-                    <img src="images/2.avif" sizes="150" alt="Founder 2">
+                    <img src="images/pexels2.jpg" sizes="150" alt="Founder 2">
                     <h3>Jane Smith</h3>
                     <p>Jane is a creative force, driving our brand's artistic direction and customer-focused strategies.</p>
                 </div>
 
                 <div class="card">
-                    <img src="images/2.avif" sizes="150" alt="Founder 3">
+                    <img src="images/pexels3.webp" sizes="150" alt="Founder 3">
+                    <h3>Robert Johnson</h3>
+                    <p>With a background in operations, Robert ensures that our company runs smoothly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="founders">
+                <div class="card">
+                    <img src="images/pexels1.jpg" sizes="150" alt="Founder 1">
+                    <h3>John Doe</h3>
+                    <p>John is the visionary behind our success, with over 15 years of experience in leading tech innovations.</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/pexels3.webp" sizes="150" alt="Founder 2">
+                    <h3>Jane Smith</h3>
+                    <p>Jane is a creative force, driving our brand's artistic direction and customer-focused strategies.</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/pexels2.jpg" sizes="150" alt="Founder 3">
                     <h3>Robert Johnson</h3>
                     <p>With a background in operations, Robert ensures that our company runs smoothly and efficiently.</p>
                 </div>
             </div>
         </div>
     </section>
+
+     <!-- Video -->
+     <video autoplay muted loop class="video2">
+        <source src="/images/video2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Footer -->
+    <footer class="footer_about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>We are dedicated to providing top-notch services and products. With years of experience, we aim to lead the industry and offer the best customer experience.</p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: appsynergy.maroc@gmail.com</p>
+                    <p>Phone: +212 771236530</p>git
+                    <div class="social-icons">
+                        <a href="#"><img src="images/facebook (1).png" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter (1).png" alt ="Twitter"></a>
+                        <a href="#"><img src="images/instagram (1).png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Our Website. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
