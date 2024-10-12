@@ -6,11 +6,10 @@
     <meta name="description" content="site web technology">
     <meta name="keywords" content="connect, CSS, JavaScript">
     <title>Simple Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="/images/1.jpg" as="images">
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="script.js" as="script">
-    <script src="https://kit.fontawesome.com/6d9e6483d0.js" crossorigin="anonymous" async defer></script>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="preload" href="images/1.jpg" as="image">
+    <link rel="preload" href="/style.css" as="style">
+    <!-- <script src="https://kit.fontawesome.com/6d9e6483d0.js" crossorigin="anonymous" async defer></script> -->
 </head>
 <body>
 
@@ -28,7 +27,7 @@
     </nav>
 
     <!-- Video -->
-    <video autoplay muted loop id="video" src="/images/video.mp4"></video>
+    <video autoplay muted loop id="video" src="images/contact.mp4"></video>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -44,12 +43,12 @@
 
                     <input type="email" id="email" name="email" placeholder="Your email" required>
 
-                    <textarea id="message" name="message" placeholder="Your message" rows="12" cols="50" required></textarea>
+                    <textarea id="message" name="message" placeholder="Your message" rows="5" cols="50" required></textarea>
 
                     <button type="submit">Send</button>
                 </form>
                 <div class="contact-image">
-                    <img src="images/1.jpg" alt="Contact Us">
+                    <img src="images/1.jpg" alt="Contact Us" loading="lazy">
                 </div>
             </div>
             

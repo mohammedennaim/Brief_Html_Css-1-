@@ -7,35 +7,25 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    width: 100%;
 }
-.video2{
-    position: relative;
-    background: no-repeat center center/cover;
-    width: 1518px;
-    height: 1080px;
-    top: -130px;
-}
-#video{
-    position: fixed;
-    background: no-repeat center center/cover;
-    width: 1600px;
-    height: 1080px;
-    top: 0;
-z-index: -1;
-}
+
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
-.container i{
+
+.container i {
     display: none;
     color: white;
 }
-.sizes{
+
+.sizes {
     font-size: 30px;
 }
+
 /* Navigation Bar */
 nav {
     background-color: #333;
@@ -45,13 +35,15 @@ nav {
     top: 0;
     z-index: 1000;
 }
-.logo{
+
+.logo {
     position: absolute;
     top: -100px;
     left: 90px;
     width: 300px;
     z-index: -1;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -72,6 +64,23 @@ nav ul li a:hover {
     color: #4CAF50;
 }
 
+.video2 {
+    position: relative;
+    background: no-repeat center center/cover;
+    width: 1518px;
+    height: 1080px;
+    top: -130px;
+}
+
+#video {
+    position: fixed;
+    background: no-repeat center center/cover;
+    width: 1600px;
+    height: 1080px;
+    top: 0;
+    z-index: -1;
+}
+
 /* Hero Section */
 section#hero {
     background: url('/images/home-background.jpg') no-repeat center center/cover;
@@ -88,7 +97,8 @@ section#hero::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text contrast */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adds a dark overlay for better text contrast */
 }
 
 section#hero .container {
@@ -163,7 +173,7 @@ section#hero p {
 
 /* Contact Section */
 #contact {
-    padding: 50px 0;
+    padding: 90px 0;
 }
 
 .contact-wrapper {
@@ -175,11 +185,13 @@ section#hero p {
 
 .contact-form {
     display: inline-flex;
-    max-width: 1200px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .contact-image {
-    padding: 20px;
+    position: relative;
+    top: 25px;
 }
 
 .contact-image img {
@@ -195,7 +207,13 @@ section#hero p {
 }
 
 #contact form {
+    position: relative;
+    top: 21px;
     max-width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 #contact label {
@@ -203,7 +221,8 @@ section#hero p {
     margin-top: 10px;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -214,11 +233,12 @@ section#hero p {
 #contact button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #0c08f8;
+    background-color: #4c6faf;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 /* Footer */
@@ -229,12 +249,14 @@ section#hero p {
     padding: 40px 0;
     margin-top: -260px;
 }
+
 footer {
     position: relative;
     background-color: #333;
     color: white;
     padding: 40px 0;
 }
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -248,6 +270,12 @@ footer {
 }
 
 .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.footer-section h2 {
     margin-bottom: 15px;
     font-size: 1.5em;
     color: #4CAF50;
@@ -300,19 +328,22 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    .container i{
+    .container i {
         display: block;
         color: white;
         position: absolute;
         right: 60px;
-    }  
-    .container i nav{
+    }
+
+    .container i nav {
         display: block;
     }
-    .logo{
+
+    .logo {
         left: 0;
-    } 
-    nav ul{
+    }
+
+    nav ul {
         list-style: none;
         display: block;
         justify-content: right;
@@ -345,42 +376,39 @@ footer p {
         font-size: 1.5em;
         margin-bottom: 20px;
     }
-    
+
     section#hero p {
         font-size: 0.5em;
         max-width: 600px;
         margin: 0 auto;
     }
+
     .contact-form {
-        display: block;
-        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
     }
-    
-    .contact-image {
-        padding: 20px;
-    }
-    
+
+
     .contact-image img {
         width: 100%;
         height: auto;
+        margin-bottom: 20px;
         border-radius: 10px;
+
     }
-    .video2{
+
+    .video2 {
         position: relative;
-        top: -27pc;
+        height: 470px;
         max-width: 100%;
     }
-    .footer_about{
-        position: relative;
-        top: -37.5pc;
-    }
-    div.card p{
-        display: none;
-    }
-    div.card:hover p{
+
+    .footer-content {
         display: block;
     }
-   .footer-content{
-    display: block;
-   }
 }
