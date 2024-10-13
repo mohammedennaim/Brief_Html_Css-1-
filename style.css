@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 section#hero {
-    background: url('/images/home-background.jpg') no-repeat center center/cover;
+    background: url('/images/home-background.webp') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 150px 0;
